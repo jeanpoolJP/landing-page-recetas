@@ -1,11 +1,462 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El Sabor del Perú - 30 Recetas Tradicionales</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                El Sabor del Perú
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contenido">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#precio">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="zoom-in-down">
+                    <h1 class="display-3 fw-bold mb-4">El Sabor del Perú</h1>
+                    <h2 class="h3 mb-5">30 Recetas Tradicionales para Cocinar en Casa</h2>
+                    <p class="lead mb-5">Descubre los secretos de la gastronomía peruana con recetas fáciles y
+                        deliciosas.</p>
+                    <a href="#precio" class="btn btn-primary btn-lg">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section class="py-5 my-5" id="beneficios">
+        <div class="container">
+            <div class="row" data-aos="fade-up-right">
+                <div class="col-lg-6 offset-lg-3 text-center mb-5">
+                    <h2 class="section-title text-center">¿Por qué elegir nuestro E-book?</h2>
+                    <p class="lead">Una completa guía para dominar la cocina peruana desde casa, sin complicaciones.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Recetas Tradicionales</h3>
+                        <p>30 auténticas recetas peruanas seleccionadas por nuestros expertos en gastronomía.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Paso a Paso</h3>
+                        <p>Instrucciones detalladas para preparar cada plato, desde principiantes hasta avanzados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Ingredientes Accesibles</h3>
+                        <p>Todos los ingredientes son fáciles de conseguir en cualquier supermercado local.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Fotografías Detalladas</h3>
+                        <p>Imágenes de alta calidad de cada plato para inspirarte y guiarte en la preparación.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Acceso Inmediato</h3>
+                        <p>Descarga instantánea en formato PDF compatible con todos tus dispositivos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card" data-aos="flip-left">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Diseño Premium</h3>
+                        <p>Libro digital diseñado profesionalmente para una experiencia de lectura agradable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Section -->
+    <section class="py-5 my-5 bg-light" id="contenido">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title">¿Qué incluye el E-book?</h2>
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-check-circle text-success me-2"></i> 30 recetas completas</h3>
+                        <p>Divididas en categorías: platos de fondo, postres, bebidas, entradas y snacks.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-check-circle text-success me-2"></i> Consejos de cocina peruana
+                        </h3>
+                        <p>Técnicas especiales, secretos y variaciones para adaptar cada receta.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-check-circle text-success me-2"></i> Lista de ingredientes</h3>
+                        <p>Guía completa de ingredientes esenciales para la cocina peruana.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-check-circle text-success me-2"></i> Historia de cada plato</h3>
+                        <p>Contexto cultural e histórico de las recetas más emblemáticas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="flip-right">
+                    <img src="/assets/img/El Sabor del Perú2.png" alt="Muestra del E-book de recetas peruanas"
+                        class="img-fluid rounded shadow w-50 d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="py-5 my-5" id="testimonios">
+        <div class="container">
+            <div class="row" data-aos="zoom-in">
+                <div class="col-lg-6 offset-lg-3 text-center mb-5">
+                    <h2 class="section-title text-center">Lo que dicen nuestros lectores</h2>
+                    <p class="lead">Personas como tú que ya están disfrutando de la auténtica cocina peruana.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/assets/img/perfil2.jpg" alt="Perfil de Carmen" class="testimonial-image">
+                            <div>
+                                <h4 class="mb-0">Carmen Rodríguez</h4>
+                                <small class="text-muted">Lima, Perú</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Nunca pensé que podría preparar un lomo saltado tan delicioso como el del restaurante. ¡Las
+                            instrucciones son claras y los resultados increíbles!"
+                        </p>
+                        <div class="mt-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/assets/img/perfil1.jpg" alt="Perfil de Miguel" class="testimonial-image">
+                            <div>
+                                <h4 class="mb-0">Miguel Torres</h4>
+                                <small class="text-muted">Madrid, España</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Compré este e-book para sorprender a mi novia peruana y quedó impresionada con la
+                            autenticidad de los platos. La sección de consejos es oro puro."
+                        </p>
+                        <div class="mt-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/assets/img/perfil2.jpg" alt="Perfil de Ana" class="testimonial-image">
+                            <div>
+                                <h4 class="mb-0">Ana Méndez</h4>
+                                <small class="text-muted">Buenos Aires, Argentina</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Soy principiante en la cocina y aún así pude preparar un ceviche perfecto a la primera. Las
+                            fotografías son muy útiles para seguir el proceso."
+                        </p>
+                        <div class="mt-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precio Section -->
+    <section class="py-5 my-5 bg-light" id="precio">
+        <div class="container">
+            <div class="row" data-aos="fade-down">
+                <div class="col-lg-6 offset-lg-3 text-center mb-5">
+                    <h2 class="section-title text-center bg-transparent-black mb-3">Obtén tu E-book hoy</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="price-card">
+                        <h3 class="h4">El Sabor del Perú</h3>
+                        <p>30 Recetas Tradicionales para Cocinar en Casa</p>
+                        <div class="price-value">S/14.90</div>
+                        <p class="text-muted mb-4">Pago único - Sin suscripciones</p>
+                        <ul class="list-unstyled text-start mb-4">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 recetas auténticas
+                                peruanas</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Fotografías de alta calidad
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Instrucciones paso a paso
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Descarga inmediata</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Acceso de por vida</li>
+                        </ul>
+
+                        <!-- Botón para abrir el modal -->
+                        <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal"
+                            data-bs-target="#paymentModal">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Pago-->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Completa tu Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de pago -->
+                    <form id="paymentForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Método de Pago</label>
+                            <select class="form-control" id="paymentMethod" required>
+                                <option value="paypal">PayPal</option>
+                                <option value="mercadopago">MercadoPago</option>
+                                <option value="stripe">Tarjeta de Crédito (Stripe)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-danger-custom w-100">Pagar Ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ Section -->
+    <section class="py-5 my-5" id="faq">
+        <div class="container">
+            <div class="row" data-aos="fade-down">
+                <div class="col-lg-6 offset-lg-3 text-center mb-5">
+                    <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+                    <p class="lead">Respuestas a las dudas más comunes sobre nuestro E-book.</p>
+                </div>
+            </div>
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cómo recibiré el E-book?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Una vez realizado el pago, recibirás un correo electrónico con un enlace de descarga
+                                    instantánea. El E-book viene en formato PDF, compatible con cualquier dispositivo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Necesito experiencia en cocina para usar este libro?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    No, las recetas están diseñadas para todos los niveles. Cada plato incluye
+                                    instrucciones paso a paso detalladas y consejos para principiantes. Cualquiera puede
+                                    seguirlas y obtener excelentes resultados.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Puedo pagar con tarjeta de crédito?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Próximamente añadiremos la opción de pago con tarjeta de crédito. Por ahora,
+                                    aceptamos transferencias bancarias y Yape. Contáctanos para más detalles sobre los
+                                    métodos de pago disponibles.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Podré encontrar los ingredientes en mi país?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Hemos seleccionado recetas con ingredientes que son relativamente fáciles de
+                                    encontrar a nivel internacional. Además, incluimos sugerencias de sustitutos para
+                                    ingredientes específicos que puedan ser difíciles de conseguir fuera de Perú.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Puedo imprimir el E-book?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Sí, el E-book está optimizado para impresión. Puedes imprimir todo el libro o solo
+                                    las recetas que te interesen.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" id="footer">
+        <div class="container">
+            <div class="row" data-aos="zoom-in-right">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">El Sabor del Perú</h4>
+                    <p>
+                        Trayendo la auténtica cocina peruana a tu hogar con recetas fáciles y deliciosas.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">Contacto</h4>
+                    <p><i class="fas fa-envelope me-2"></i> info@elsaborperu.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +51 987 654 321</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Síguenos</h4>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 El Sabor del Perú. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Política de Privacidad</a>
+                    <a href="#" class="text-white">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
