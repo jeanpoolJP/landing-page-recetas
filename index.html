@@ -296,18 +296,15 @@
                             <input type="text" class="form-control" id="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label for="phone" class="form-label">Número de Celular</label>
+                            <input type="tel" class="form-control" id="phone" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="paymentMethod" class="form-label">Método de Pago</label>
-                            <select class="form-control" id="paymentMethod" required>
-                                <option value="paypal">PayPal</option>
-                                <option value="mercadopago">MercadoPago</option>
-                                <option value="stripe">Tarjeta de Crédito (Stripe)</option>
-                            </select>
+                        <div class="d-flex justify-content-between">
+                            <a id="whatsappBtn" class="btn btn-success w-50 me-2" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                            </a>
+                            <button type="button" class="btn btn-danger-custom w-50">Comprar Ahora</button>
                         </div>
-                        <button type="submit" class="btn btn-danger-custom w-100">Pagar Ahora</button>
                     </form>
                 </div>
             </div>
@@ -454,6 +451,10 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Enlace a script -->
+    <script src="assets/js/script.js"></script>
+
     <script>
         AOS.init();
     </script>
