@@ -14,7 +14,7 @@ body {
 
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('/assets/img/imagen-fondo.jpg') center/cover no-repeat;
+    url('../img/imagen-fondo.jpg') center/cover no-repeat;
     color: white;
     padding: 8rem 0;
     text-align: center;
@@ -121,7 +121,7 @@ body {
 }
 
 footer {
-    background: url('/assets/img/fondo-contenido.jpg') center/cover no-repeat;
+    background: url('../img/fondo-contenido.jpg') center/cover no-repeat;
     color: white;
     padding: 3rem 0;
 }
@@ -139,13 +139,13 @@ footer {
 }
 
 #contenido {
-    background: url('/assets/img/fondo-contenido.jpg') center/cover no-repeat;
+    background: url('../img/fondo-contenido.jpg') center/cover no-repeat;
     padding: 5rem 0;
     color: white; 
 }
 
 #precio {
-    background-image: url('/assets/img/fondo-precio.jpg'); 
+    background-image: url('../img/fondo-precio.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
