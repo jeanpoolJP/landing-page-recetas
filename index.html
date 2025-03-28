@@ -299,13 +299,22 @@
                             <label for="phone" class="form-label">Número de Celular</label>
                             <input type="tel" class="form-control" id="phone" required>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <a id="whatsappBtn" class="btn btn-success w-50 me-2" target="_blank">
-                                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    
+                        <!-- Mensaje claro sobre las dos opciones de pago -->
+                        <p class="text-center fw-bold">Elige cómo quieres comprar:</p>
+                    
+                        <div class="d-flex flex-column align-items-center">
+                            <!-- Opción 1: Contacto por WhatsApp -->
+                            <a id="whatsappBtn" class="btn btn-success w-75 mb-3" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
                             </a>
-                            <button type="button" class="btn btn-danger-custom w-50">Comprar Ahora</button>
+                    
+                            <!-- Opción 2: Pago directo con PayPal -->
+                            <p class="text-center">O paga directamente con PayPal de forma rápida y segura:</p>
+                            <div id="paypal-button-container" class="w-100"></div>
                         </div>
                     </form>
+                                       
                 </div>
             </div>
         </div>
@@ -454,6 +463,10 @@
 
     <!-- Enlace a script -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/paypal.js"></script>
+
+    <!-- Enlace a paypal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AcfkRAs0COO4VkOURs3uU6yrbcfJFZY0NeVHAEvUNKhHJKV1u37WTg6ecPiZvN9EKaPHOqcRJjtXuewM"></script>
 
     <script>
         AOS.init();
