@@ -256,7 +256,7 @@
                     <div class="price-card">
                         <h3 class="h4">El Sabor del Perú</h3>
                         <p>30 Recetas Tradicionales para Cocinar en Casa</p>
-                        <div class="price-value">S/14.90</div>
+                        <div class="price-value" id="price-value">S/14.90</div>
                         <p class="text-muted mb-4">Pago único - Sin suscripciones</p>
                         <ul class="list-unstyled text-start mb-4">
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 recetas auténticas
@@ -274,6 +274,19 @@
                             data-bs-target="#paymentModal">
                             Comprar Ahora
                         </button>
+
+                        <!-- Texto que activa el campo para ingresar código de descuento -->
+                        <p class="text-muted mb-4" style="cursor: pointer;" onclick="mostrarCampoDescuento()">Tengo un
+                            código de descuento</p>
+
+                        <!-- Campo para código de descuento (inicialmente oculto) -->
+                        <div id="discountCodeSection" class="discount-code mb-3" style="display:none;">
+                            <label for="discountCode" class="form-label">¿Tienes un código de descuento?</label>
+                            <input type="text" class="form-control" id="discountCode" placeholder="Ingresa tu código">
+                            <button type="button" class="btn btn-secondary mt-2" onclick="aplicarDescuento()">Aplicar
+                                Código</button>
+                            <p id="discountMessage" class="text-success mt-2"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -299,27 +312,26 @@
                             <label for="phone" class="form-label">Número de Celular</label>
                             <input type="tel" class="form-control" id="phone" required>
                         </div>
-                    
+
                         <!-- Mensaje claro sobre las dos opciones de pago -->
                         <p class="text-center fw-bold">Elige cómo quieres comprar:</p>
-                    
+
                         <div class="d-flex flex-column align-items-center">
                             <!-- Opción 1: Contacto por WhatsApp -->
                             <a id="whatsappBtn" class="btn btn-success w-75 mb-3" target="_blank">
                                 <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
                             </a>
-                    
+
                             <!-- Opción 2: Pago directo con PayPal -->
                             <p class="text-center">O paga directamente con PayPal de forma rápida y segura:</p>
                             <div id="paypal-button-container" class="w-100"></div>
                         </div>
                     </form>
-                                       
+
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- FAQ Section -->
     <section class="py-5 my-5" id="faq">
@@ -461,13 +473,14 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Enlace a script -->
+    <!-- Enlace a funciones -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/paypal.js"></script>
+    <script src="assets/js/descuento.js"></script>
 
     <!-- Enlace a paypal -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AcfkRAs0COO4VkOURs3uU6yrbcfJFZY0NeVHAEvUNKhHJKV1u37WTg6ecPiZvN9EKaPHOqcRJjtXuewM"></script>
-
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AcfkRAs0COO4VkOURs3uU6yrbcfJFZY0NeVHAEvUNKhHJKV1u37WTg6ecPiZvN9EKaPHOqcRJjtXuewM"></script>
     <script>
         AOS.init();
     </script>
